@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Brazil.Standard.Extensions</PackageId>
+    <Product>Brazilian Standard Extensions</Product>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>netstandard2.0 net45 library brazil</PackageTags>
+    <Owners>diogosapessoa@gmail.com</Owners>
+    <Authors>diogosapessoa@gmail.com</Authors>
+    <Company />
+    <Copyright />
+    <Title>Brazilian Standard Extensions Library</Title>
+    <Summary>Brazilian Standard Extensions Library</Summary>
+    <Description>Brazilian Standard Extensions Library</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugSymbols>false</DebugSymbols>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  
+</Project>
