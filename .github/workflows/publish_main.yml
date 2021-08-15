@@ -1,0 +1,20 @@
+name: publish nuget main
+on:
+  push:
+    branches:
+      - master
+jobs:
+  publish:
+    name: build, pack & publish main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: publish on version change
+        id: publish_nuget
+        uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: Brazil.Standard/Brazil.Standard.csproj
+          PACKAGE_NAME: Brazil.Standard
+          VERSION_FILE_PATH: Brazil.Standard/Brazil.Standard.csproj
+          VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
