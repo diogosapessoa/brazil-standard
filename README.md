@@ -4,7 +4,7 @@ Brazilian Standard Library
 
 ## Installation
 
-**``Brazil.Standard`` is available on NuGet** [![NuGet](https://img.shields.io/nuget/v/Brazil.Standard.svg)](https://www.nuget.org/packages/Csv.Csharp/)
+**``Brazil.Standard`` is available on NuGet** [![NuGet](https://img.shields.io/nuget/v/Brazil.Standard.svg)](https://www.nuget.org/packages/Brazil.Standard/)
 
 ```console
 PM> Install-Package Brazil.Standard -version 1.0.1
